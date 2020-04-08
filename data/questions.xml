@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<questions>
+
+  <question seconds="5" points="2">
+    <text>Сколько байт в килобайте?</text>
+    <variants>
+      <variant right="true">1024</variant>
+      <variant>2048</variant>
+      <variant>1000</variant>
+      <variant>512</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="2">
+    <text>Кто написал Хоббит?</text>
+    <variants>
+      <variant right="true">Джон Рональд Руэл Толкин</variant>
+      <variant>Чарльз Диккенс</variant>
+      <variant>Оскар Уайльд</variant>
+      <variant>Артур Конан Дойль</variant>
+    </variants>
+  </question>
+  <question seconds="5" points="1">
+    <text>Столица Японии?</text>
+    <variants>
+      <variant right="true">Токио</variant>
+      <variant>Осака</variant>
+      <variant>Нагано</variant>
+      <variant>Иокогама</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="3">
+    <text>Сборная какой страны стала чемпионом мира по футболу в 2018 году?</text>
+    <variants>
+      <variant right="true">Франция</variant>
+      <variant>Бельгия</variant>
+      <variant>Хорватия</variant>
+      <variant>Англия</variant>
+    </variants>
+  </question>
+  <question seconds="7" points="5">
+    <text>Единица измерения мощности?</text>
+    <variants>
+      <variant right="true">Ватт</variant>
+      <variant>Ампер</variant>
+      <variant>Вольт</variant>
+      <variant>Ом</variant>
+    </variants>
+  </question>
+  <question seconds="10" points="5">
+    <text>В древнегреческой мифологии бог торговли и счастливого случая, хитрости, воровства, юношества и красноречия?</text>
+    <variants>
+      <variant right="true">Гермес</variant>
+      <variant>Гефест</variant>
+      <variant>Дионис</variant>
+      <variant>Аполлон</variant>
+    </variants>
+  </question>
+  <question seconds="5" points="4">
+    <text>На каком автомобиле путешествовали во времени Марти Макфлай и доктор Эмметт Браун в серии фильмов Назад?</text>
+    <variants>
+      <variant right="true">Делориан</variant>
+      <variant>Форд</variant>
+      <variant>Шевроле</variant>
+      <variant>Крайслер</variant>
+    </variants>
+  </question>
+</questions>
