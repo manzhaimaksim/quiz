@@ -40,5 +40,4 @@ end
 file.close
 
 user_game = Game.new(questions)
-user_interface = Interface.new(user_game)
-
+user_game.play_game
