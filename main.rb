@@ -34,4 +34,16 @@ end
 file.close
 
 user_game = Game.new(questions)
-user_game.play_game
+user_interface = Interface.new(user_game)
+
+user_game.questions.each do |question|
+  start = Time.now
+  user_interface.show_question(question)
+  user_interface.show_variants(question)
+  user_input = user_interface.input
+  user_interface.result(user_input, question)
+  finish = Time.now
+  break user_interface.time_is_done if (finish - start) > question.seconds
+end
+
+user_interface.total_result

@@ -1,16 +1,14 @@
 class Interface
-  attr_reader :game
-
   def initialize(game)
     @game = game
   end
 
   def show_question(question)
-    puts question
+    puts "#{question.text} (Баллы: #{question.points})"
   end
 
-  def show_variants(variants)
-    variants.each.with_index(1) do |variant, index|
+  def show_variants(question)
+    question.variants.each.with_index(1) do |variant, index|
       puts "#{index}. #{variant[0]}"
     end
   end
@@ -25,8 +23,8 @@ class Interface
     user_input
   end
 
-  def result(answer, question, variants)
-    if variants[answer - 1][1] == 'true'
+  def result(answer, question)
+    if question.variants[answer - 1][1] == 'true'
       puts 'Верный ответ'
       @game.points += question.points
     else
@@ -39,7 +37,7 @@ class Interface
   end
 
   # выводит результат на экран
-  def show_result
+  def total_result
     puts
     puts "Заработано баллов: #{@game.points}"
   end
