@@ -14,6 +14,6 @@ class Question
 
   # выводит правильный ответ
   def true_answer
-    @variants.each { |v| return v[0] if v[1] == true }
+    @variants.each { |variant| return variant[0] if variant[1] == 'true' }
   end
 end

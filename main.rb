@@ -15,25 +15,19 @@ doc = REXML::Document.new(file)
 
 questions = []
 
-def to_boolean(string)
-  return true if string == 'true'
-  return false if string == 'false'
-  nil
-end
-
 doc.elements.each('questions/question') do |question|
   text = question.elements['text'].text
 
   variants = []
   question.elements.each('variants/variant') do |variant|
     variant.attributes['right'] ||= false
-    variants << [variant.text, to_boolean(variant.attributes['right'])]
+    variants << [variant.text, variant.attributes['right']]
   end
 
   points = question.attributes['points'].to_i
   seconds = question.attributes['seconds'].to_i
 
-  params = {text: text, variants: variants, points: points, seconds: seconds}
+  params = { text: text, variants: variants, points: points, seconds: seconds }
   questions << Question.new(params)
 end
 

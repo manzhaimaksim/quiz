@@ -25,8 +25,8 @@ class Interface
     user_input
   end
 
-  def result(answer, question)
-    if question.variants[answer - 1][1] == true
+  def result(answer, question, variants)
+    if variants[answer - 1][1] == 'true'
       puts 'Верный ответ'
       @game.points += question.points
     else

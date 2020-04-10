@@ -21,8 +21,7 @@ class Game
       @user_interface.show_variants(variants)
 
       user_input = @user_interface.input
-
-      @user_interface.result(user_input, question)
+      @user_interface.result(user_input, question, variants)
 
       finish = Time.now
 
